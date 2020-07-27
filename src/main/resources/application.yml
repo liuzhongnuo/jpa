@@ -1,0 +1,22 @@
+spring:
+  messages:
+    encoding: UTF-8
+    basename: message_zh_CN
+  #开始thymeleaf设置
+  thymeleaf:
+    cache: false
+  #禁用模板缓存
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot?serverTimezone=GMT%2B8
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+

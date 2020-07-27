@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1 th:if="${flag=='yes'}">假面骑士decade</h1>
+  <h1 th:unless="${flag=='no'}">假面骑士</h1>
+<div th:switch="${menu}">
+    <p th:case="'admi'">假面骑士555</p>
+    <p th:case="${manager}">假面骑士kiva</p>
+</div>
+</body>
+</html>

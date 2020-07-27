@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+时间：<span th:text="${#dates.format(date,'yyyy-MM-dd:hh-mm-ss')}">假面骑士decade</span>
+金额：<span th:text="'￥'+${#numbers.formatDecimal(price,1,2)}">1234</span>
+<p th:text="${#strings.abbreviate(strText,60)}">东方能源的部分被一部分不低于发布VB大部分有点</p>
+<span th:if="${!#strings.isEmpty(str2)}">asdsdf</span>
+<span th:text="${#strings.substring(str2,0,4)}">萨达萨达所</span>
+</body>
+</html>
